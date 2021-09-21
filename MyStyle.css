@@ -1,0 +1,21 @@
+body{
+    
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    outline:3px solid black;
+}
+header{
+    background-color: cyan;
+}
+footer{
+    background-color:rgb(111, 164, 177);
+}
+body{
+    background-color:lightskyblue;
+}
