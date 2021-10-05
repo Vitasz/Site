@@ -8,24 +8,28 @@ img{
     outline:3px solid black;
 }
 header{
-    background-color: cyan;
+    background-color: black;
     height:50px;
     list-style: none;
+    outline-color: black;
+    outline-width: 1px;
 }
 .header-logo{
     float:right; 
     outline:none;
     height:50px;
 }
-ul.horizontal{
+ul.main-menu{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
-ul.horizontal li{
-    display: block;
+ul.main-menu button{
+    background-color: black;
     float:right;
-    margin:auto;
+    color:white;
     padding: 10px 10px;
+    border-radius: 5px;
     font-size: 150%;
 }
 footer{
@@ -34,7 +38,7 @@ footer{
     display: block;
 }
 body{
-    background-color:lightskyblue;
+    background-color:white;
 }
 .product-card{
     display:inline;
@@ -53,8 +57,8 @@ body{
     float:left;
 }
 .container{
-    margin: 20px 20px;
-    display:block;
+    margin: 0px auto;
+    width: 100%;
 }
 .product-item{
     width:300px;
@@ -72,3 +76,25 @@ body{
  .catalog{
      display:inline;
  }
+.menu-button{
+    background-color: black;
+    float:right;
+    color:white;
+    border-color: white;
+    padding: 9px 8px;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 150%;
+    margin:1px 1px 0px 1px;
+    border-width: 3px 3px 0px 3px;
+}
+.menu-button-now{
+    background-color: white;
+    float:right;
+    color:black;
+    border-color: black;
+    padding: 9.5px 8px;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 150%;
+    margin:1px 1px 0px 1px;
+    border-width: 2px 2px 0px 2px;
+}
