@@ -13,9 +13,10 @@ header{
     list-style: none;
     outline-color: black;
     outline-width: 1px;
+    flex:0 0 auto;
 }
 .header-logo{
-    float:right; 
+    float:left; 
     outline:none;
     height:50px;
 }
@@ -33,49 +34,29 @@ ul.main-menu button{
     font-size: 150%;
 }
 footer{
-    background-color:rgba(117, 150, 189, 0.733);
-    height: 270px;
+    background-color:black;
+    color:white;
     display: block;
+    flex: 0 0 auto
+}
+html{
+    height: 100%;
 }
 body{
     background-color:white;
+    height:100%;
+    display:flex;
+    flex-direction: column;
 }
-.product-card{
-    display:inline;
-    width:200px;
-    height:100px;
-}
-.product-card img{
-    width:200px;
-    height:100px;
-    outline:none;
-    float:left;
-}
-.product-card table{
-    width:200px;
-    height:100px;
-    float:left;
-}
+
 .container{
     margin: 0px auto;
     width: 100%;
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
-.product-item{
-    width:300px;
-    text-align: center;
-    margin:0 auto;
-    float:left;
-    border: 1px solid black;
-    background-color: white;
-}
-.product-item img {
-    display: block;
-    width: 100%;
-    outline:none;
- }
- .catalog{
-     display:inline;
- }
+
 .menu-button{
     background-color: black;
     float:right;
@@ -97,4 +78,7 @@ body{
     font-size: 150%;
     margin:1px 1px 0px 1px;
     border-width: 2px 2px 0px 2px;
+}
+.main-content{
+    flex:1 0 auto;
 }
