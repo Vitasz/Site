@@ -1,3 +1,28 @@
+CREATE TABLE Personals(
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   FIO string NOT NULL,
+   age int NOT NULL,
+   Wage int NOT NULL,
+   gender bool NOT NULL,
+   birthday date NOT NULL,
+   PlaceOfResidence string NOT NULL
+   )
+CREATE TABLE PickUpPoints(
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   Place string NOT NULL,
+   WorkTime int NOT NULL,
+   personal_id INTEGER NOT NULL,
+   Buys int NOT NULL,
+   ProductCount int NOT NULL,
+   FOREIGN KEY (personal_id) REFERENCES Personals(id)
+   )
+CREATE TABLE Providers(
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   Place string NOT NULL,
+   Prices int NOT NULL,
+   Buys int NOT NULL,
+   ProductCount int NOT NULL
+   )
 CREATE TABLE VideoCards(
    id INTEGER PRIMARY KEY AUTOINCREMENT,
    ProductionDate date NOT NULL,
@@ -7,29 +32,4 @@ CREATE TABLE VideoCards(
    PickupPoint int NOT NULL,
    FOREIGN KEY (PickupPoint) REFERENCES PickUpPoints,
    FOREIGN KEY (provider_id) REFERENCES Providers(id)
-   );
-CREATE TABLE Providers(
-   id INTEGER PRIMARY KEY AUTOINCREMENT,
-   Place string NOT NULL,
-   Prices int NOT NULL,
-   Buys int NOT NULL,
-   ProductCount int NOT NULL
-   );
-CREATE TABLE PickUpPoints(
-   id INTEGER PRIMARY KEY AUTOINCREMENT,
-   Place string NOT NULL,
-   WorkTime int NOT NULL,
-   personal_id INTEGER NOT NULL,
-   Buys int NOT NULL,
-   ProductCount int NOT NULL,
-   FOREIGN KEY (personal_id) REFERENCES Personals(id)
-   );
-CREATE TABLE Personals(
-   id INTEGER PRIMARY KEY AUTOINCREMENT,
-   FIO string NOT NULL,
-   age int NOT NULL,
-   Wage int NOT NULL,
-   gender bool NOT NULL,
-   birthday date NOT NULL,
-   PlaceOfResidence string NOT NULL
-   );
+   )
