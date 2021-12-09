@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="MyStyle.css">
     <title>Информация о видеокарте RTX3060</title>
 </head>
 <body>
-    <h1>Добро пожаловать в наш магазин</h1>
-    <a href="MainPage.html">Вернуться на главную страницу</a><br>
-    <a href="Catalog.html">Вернуться в каталог</a>
-    <img src="RTX3060.jpg">
-    <table border="1">
-        <tr>
-            <th>Параметр</th>
-            <th>Информация</th>
-        </tr>
-        <tr><th>Цена</th><th>70000 рублей</th></tr>
-        <tr><th>Гарантия</th><th>2 года</th></tr>
-    </table>
-
+    <header>
+        <a href="#" class = "header-logo"><img src = "google.png" class = "header-logo"></a>
+        <ul class = "main-menu">
+            <input class="menu-button"type="button" value="Оставить отзыв" onClick='location.href="About.html"'>
+            <input class="menu-button"type="button" value="Каталог" onClick='location.href="Catalog.html"'>
+            <input class="menu-button" type="button" value="Главная" onClick='location.href="MainPage.html"'>
+        </ul>
+        
+    </header>
+    <div class="main-content"></div>
+        <div class = "product-card">
+            <img src="RTX3060.jpg">
+            <table border = 1>
+                <tr>
+                    <th>Параметр</th>
+                    <th>Информация</th>
+                </tr>
+                <tr><th>Цена</th><th>70000 рублей</th></tr>
+                <tr><th>Гарантия</th><th>2 года</th></tr>
+            </table>
+            <br clear="all">
+            <button>Купить</button>
+        </div>
+    </div>
     <footer>
-        Где нас найти:<br>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7a5071cdbddb1c1f4f083f3dedd89442cbc91f39f3e857718012ad1391ca19ac&amp;source=constructor" width="843" height="493" frameborder="0"></iframe>
-        <br>
         Copyright Виталий Богомья
     </footer>
 </body>

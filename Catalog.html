@@ -2,21 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="MyStyle.css">
+    <link rel="stylesheet" type="text/css" href="StyleProductCards.css">
     <title>Каталог</title>
 </head>
 <body>
-    <ul>
-        <li><a href="MainPage.html">Вернуться на главную</a></li>
-    </ul>
-    <h1>Каталог</h1>
-    <a href="ProductInfo.html">Видеокарта RTX3060</a><br>
-    <a href="ProductInfo.html">Видеокарта RTX3070</a><br>
-    <a href="ProductInfo.html">Видеокарта RTX3080</a><br>
-    
+    <header>
+        <a href="#" class = "header-logo"><img src = "google.png" class = "header-logo"></a>
+
+        <ul class = "main-menu">
+            <input class="menu-button"type="button" value="Оставить отзыв" onClick='location.href="About.html"'>
+            <input class="menu-button-now"type="button" value="Каталог" onClick='location.href="Catalog.html"'>
+            <input class="menu-button" type="button" value="Главная" onClick='location.href="MainPage.html"'>
+        </ul>
+    </header>
+    <div class="main-content">
+        <div class="catalog">
+            <div class = "product-wrap">
+                <div class = "product-item">
+                    <img src = "RTX3060.jpg">
+                    <div class = "product-buttons">
+                        <a href ="ProductInfo.html" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-title">
+                    <a href="ProductInfo.html">Видеокарта RTX3060</a>
+                    <span class="product-price">₽ 1999999</span>
+                </div>
+            </div>
+            <div class = "product-wrap">
+                <div class = "product-item">
+                    <img src = "RTX3060.jpg">
+                    <div class = "product-buttons">
+                        <a href ="ProductInfo.html" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-title">
+                    <a href="ProductInfo.html">Видеокарта RTX3060</a>
+                    <span class="product-price">₽ 1999999</span>
+                </div>
+            </div>
+            <div class = "product-wrap">
+                <div class = "product-item">
+                    <img src = "RTX3060.jpg">
+                    <div class = "product-buttons">
+                        <a href ="ProductInfo.html" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-title">
+                    <a href="ProductInfo.html">Видеокарта RTX3060</a>
+                    <span class="product-price">₽ 1999999</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
-        Где нас найти:<br>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7a5071cdbddb1c1f4f083f3dedd89442cbc91f39f3e857718012ad1391ca19ac&amp;source=constructor" width="843" height="493" frameborder="0"></iframe>
-        <br>
         Copyright Виталий Богомья
     </footer>
 </body>
